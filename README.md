@@ -67,7 +67,8 @@ test
 ------------------
     siamese_test.py  
     
-Once the representative data have been selected from the training data, you can now test the model with data that has never been used for training.
+Once the representative data have been selected from the training data, you can now test the model with data that has never been used for training.  
+
     flags.DEFINE_float('DISTANCE_THRESHOLD', 0.2, 'class judgement threshold distance.')
     flags.DEFINE_string('TEST_DATA_DIR', 'C:/projects/dataset/thermal_image/80_60_test_dataset/',
                 'Directory to put the test data.')
