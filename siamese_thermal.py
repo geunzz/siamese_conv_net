@@ -62,7 +62,7 @@ def accuracy(y_true, y_pred):
     '''
     return K.mean(K.equal(y_true, K.cast(y_pred < 0.2, y_true.dtype)))
 
-datagen = data_generator(DATASET_PATH = 'C:/projects/dataset/thermal_image/80_60_origin_gray_image/', shuffle_sel=True)
+datagen = data_generator(DATASET_PATH = 'C:/PATH/TO/THE/IMAGE/', shuffle_sel=True)
 data_class_set, data_array, label, data_name = datagen.data_label_set_gen()
 x_train, x_test, y_train, y_test, z_train, z_test = datagen.train_val_split(data_array, label, data_name, test_prob=0.2)
 
