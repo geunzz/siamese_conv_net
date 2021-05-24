@@ -38,7 +38,7 @@ As the learning progresses, you can check the training progress epoch and traini
 
 tsne_plot
 --------------------
-    plot_tsne_siamese.py  
+    python plot_tsne_siamese.py  
     
 TSNE is just a tool for visualization, but since there is a part that selects representative data through this code, execution must be preceded before the test code.
 In this implemented code, when a specific image is input, each representative image in the class is compared with the input image once, 
@@ -65,7 +65,7 @@ The figure below is a picture tested with 20 classes, and the dataset provided a
 
 test
 ------------------
-    siamese_test.py  
+    python siamese_test.py  
     
 Once the representative data have been selected from the training data, you can now test the model with data that has never been used for training.  
 
